@@ -82,8 +82,8 @@ def main():
                                                  vocab_size=args.vocab_size, dis_emb_dim=args.dis_emb_dim,
                                                  num_rep=args.num_rep, sn=args.sn)
         oracle_train(generator, discriminator, oracle_model, oracle_loader, gen_loader, config)
-
-    elif args.dataset in ['image_coco', 'emnlp_news']:
+    else:
+    # elif args.dataset in ['image_coco', 'emnlp_news']:
         data_file = os.path.join(args.data_dir, '{}.txt'.format(args.dataset))
         seq_len, vocab_size = text_precess(data_file)
         config['seq_len'] = seq_len
@@ -101,8 +101,8 @@ def main():
                                                  num_rep=args.num_rep, sn=args.sn)
         real_train(generator, discriminator, oracle_loader, config)
 
-    else:
-        raise NotImplementedError('{}: unknown dataset!'.format(args.dataset))
+    #else:
+    #    raise NotImplementedError('{}: unknown dataset!'.format(args.dataset))
 
 
 if __name__ == '__main__':
