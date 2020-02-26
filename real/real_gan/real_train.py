@@ -38,7 +38,7 @@ def real_train(generator, discriminator, oracle_loader, config):
     elif dataset == 'emnlp_news':
         test_file = os.path.join(data_dir, 'testdata/test_emnlp.txt')
     else:
-        raise NotImplementedError('Unknown dataset!')
+        test_file = os.path.join(data_dir, 'testdata/' + dataset + '.txt')
 
     # create necessary directories
     if not os.path.exists(data_dir):
