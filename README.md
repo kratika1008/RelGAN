@@ -1,6 +1,10 @@
-## RelGAN: Modified
+# My Version of RelGAN
 
-This repository contains the code from this paper: [RelGAN: Relational Generative Adversarial Networks for Text Generation](https://openreview.net/pdf?id=rJedV3R5tm), modified to work with multiple data sets, for (insert MQP link here).
+My goal is to make RelGAN more generalizable for my research. I will update as this goal is achieved.
+
+## About RelGAN
+
+This repository contains the code from this paper: [RelGAN: Relational Generative Adversarial Networks for Text Generation](https://openreview.net/pdf?id=rJedV3R5tm).
 
 ## Dependencies
 This project uses Python 3.5.2, with the following lib dependencies:
